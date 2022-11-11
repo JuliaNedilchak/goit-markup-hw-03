@@ -27,18 +27,18 @@ body {
 
   outline: 2px solid tomato;
 }
-
+.head-content {
+  display: flex;
+  align-items: center;
+}
+.main-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .site-nav {
   display: flex;
-}
-.container-hero {
-  height: 600px;
-  width: min content 1200px;
-  margin-bottom: 94px;
-}
-.hero-text {
-  padding-top: 200px;
-  padding-bottom: 45px;
+  margin-left: 93px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -46,13 +46,19 @@ body {
 .contacts {
   display: flex;
 }
-.main-head {
-  display: flex;
-  align-items: center;
-}
-.contacts .item:not(:last-child) {
+.contacts .numbers:not(:last-child) {
   margin-right: 50px;
 }
+.container-hero {
+  height: 600px;
+  min-width: 1200px;
+  margin-bottom: 94px;
+}
+.hero-text {
+  padding-top: 200px;
+  padding-bottom: 45px;
+}
+
 h1,
 h2,
 h3,
@@ -71,10 +77,12 @@ ul {
   list-style: none;
   text-decoration: none;
 }
-.block {
-  display: inline-block;
-  width: 270px;
-  vertical-align: middle;
+
+.block:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages {
+  display: flex;
 }
 .hide {
   border: 0;
@@ -113,8 +121,12 @@ ul {
   display: block;
   width: 270px;
 }
+.advantages {
+  padding-left: 0;
+}
 img {
   display: block;
+  max-width: 100%;
 }
 .pictures-list {
   display: flex;
@@ -136,13 +148,29 @@ header {
   padding-bottom: 50px;
   padding-left: 453px;
 }
-.card {
-  display: block;
-}
+
 .collegues-list {
+  outline: 1px solid red;
+  margin: 0;
+  padding-left: 0;
+  margin-bottom: 94px;
   display: flex;
-  flex-wrap: wrap;
 }
+.collegue-name {
+  margin-bottom: 10px;
+}
+.content {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.collegues-list .card {
+  outline: 1px solid red;
+}
+.collegues-list .card:not(:last-child) {
+  margin-right: 30px;
+}
+
 header .logo,
 footer .logo {
   font-family: 'Raleway', sans-serif;
@@ -263,6 +291,27 @@ h1 {
 footer {
   background-color: var(--primary-dark-color);
 }
+.web {
+  display: inline-block;
+}
+
+.footer-content .logo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.address-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+.phone {
+  display: block;
+  padding-bottom: 60px;
+}
 .address {
   font-weight: 400;
   font-size: 14px;
@@ -275,6 +324,60 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+}
+.header-container {
+  margin-bottom: 94px;
+}
+.filter-list {
+  display: flex;
+  margin-top: 0;
+  margin-right: 300px;
+  margin-bottom: 50px;
+  margin-left: 295px;
+  padding-left: 0;
+  padding-bottom: 16px;
+  width: 575px;
+}
+
+.item-type:not(:last-child) {
+  margin-right: 8px;
+}
+.all {
+  width: 73px;
+}
+.site {
+  width: 125px;
+}
+.adds {
+  width: 112px;
+}
+.design {
+  width: 103px;
+}
+.market {
+  width: 130px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.card-set .card-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.dist {
+  margin-bottom: 94px;
+}
+.intro {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .button-filters {
   font-weight: 500;
