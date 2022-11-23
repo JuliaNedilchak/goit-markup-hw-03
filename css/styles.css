@@ -25,9 +25,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid tomato;
 }
+
 .head-content {
   display: flex;
   align-items: center;
@@ -162,9 +161,6 @@ header {
   margin-bottom: 10px;
 }
 
-.collegues-list .card {
-  outline: 1px solid red;
-}
 .collegues-list .card:not(:last-child) {
   margin-right: 30px;
 }
@@ -323,8 +319,7 @@ footer {
 .address-list .add:not(:last-child) {
   margin-bottom: 9px;
 }
-.address {
-  display: block;
+address {
   margin-top: 20px;
 }
 .filter-list {
@@ -378,6 +373,11 @@ footer {
   line-height: 2;
   color: var(--title-color);
   margin-bottom: 4px;
+}
+.intro {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .text-portfolio {
   font-weight: 400;
